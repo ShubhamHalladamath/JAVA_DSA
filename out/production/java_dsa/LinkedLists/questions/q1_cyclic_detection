@@ -1,0 +1,23 @@
+1.remove dublicates
+2.merging two linkedlists
+3.linked listcycle:
+      1->fast and slow pointer;slow 1 time next and fast pointer 2 time next;;
+      public class Solution {
+          public boolean hasCycle(ListNode head) {
+              ListNode f=head;
+              ListNode s=head;
+              while(f!=null && f.next!=null){
+
+                   f=f.next.next;
+                  s=s.next;
+
+                 if(f==s){
+                 return true;
+                 }
+
+              }
+              return false;
+          }
+      }
+leetcode 141 problem :important ->>>starting of circular linked list is at the same length of the position from starting
+and and from position of f and s(fast and slow pointer)....
